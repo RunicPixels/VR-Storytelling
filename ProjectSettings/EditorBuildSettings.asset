@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/DemoScene.unity
+    guid: 087ec8fafb3660a4391ccc8d985749ed
+  - enabled: 1
     path: Assets/SteamVR/InteractionSystem/Samples/Scenes/Interactions_Example.unity
     guid: e3b77830391f10343929883b18f4d5ae
   - enabled: 0
     path: Assets/SteamVR/Scenes/example.unity
     guid: 274ae687a94e2444b85ce2bcf56c1df3
-  - enabled: 1
-    path: Assets/Scenes/DemoScene.unity
-    guid: 087ec8fafb3660a4391ccc8d985749ed
