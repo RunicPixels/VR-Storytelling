@@ -1026,6 +1026,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f6229cb1bb2334428a6a8fa2a66e288, type: 3}
   m_IsPrefabParent: 0
+--- !u!1001 &90637420
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.296299
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.993231
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c9f56dfd6ad684db59de6614534c6545, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1001 &93129382
 Prefab:
   m_ObjectHideFlags: 0
@@ -1990,6 +2044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 0}
   attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
   detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
 --- !u!54 &192807235
@@ -3266,7 +3321,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &304196368 stripped
 Transform:
@@ -5067,7 +5122,7 @@ Transform:
   - {fileID: 924955677}
   - {fileID: 1827080014}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &455407721
 Texture2D:
@@ -10880,6 +10935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 0}
   attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
   detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
 --- !u!54 &1199491024
@@ -11002,6 +11058,10 @@ Prefab:
     - target: {fileID: 400000, guid: b2c596aa143e1474693e6716ee93a018, type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b2c596aa143e1474693e6716ee93a018, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2c596aa143e1474693e6716ee93a018, type: 3}
@@ -11941,6 +12001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 0}
   attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
   detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
 --- !u!54 &1273923579
@@ -14098,7 +14159,7 @@ Transform:
   - {fileID: 1504105441}
   - {fileID: 1439547343}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498211798 stripped
 GameObject:
@@ -14289,6 +14350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 0}
   attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
   detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
 --- !u!4 &1506976684 stripped
@@ -14714,6 +14776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 0}
   attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
   detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
 --- !u!4 &1558828613
@@ -14906,7 +14969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
+  source: {fileID: 0}
+  attachSound: {fileID: 8300000, guid: 7f9dcc39d8549ef41a480fa55674ee0b, type: 3}
   detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
 --- !u!4 &1585853742 stripped
 Transform:
@@ -16856,8 +16920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
-  detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
+  source: {fileID: 0}
+  attachSound: {fileID: 8300000, guid: 4d88fa88c53224009a2c40b50d564941, type: 3}
+  detachSound: {fileID: 8300000, guid: 4d88fa88c53224009a2c40b50d564941, type: 3}
 --- !u!28 &1797923595
 Texture2D:
   m_ObjectHideFlags: 0

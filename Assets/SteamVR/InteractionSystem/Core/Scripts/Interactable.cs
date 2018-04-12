@@ -15,7 +15,8 @@ namespace Valve.VR.InteractionSystem
 	{
 		public delegate void OnAttachedToHandDelegate( Hand hand );
 		public delegate void OnDetachedFromHandDelegate( Hand hand );
-        private AudioSource source;
+        [HideInInspector]
+        public AudioSource source;
         public AudioClip attachSound;
         public AudioClip detachSound;
 

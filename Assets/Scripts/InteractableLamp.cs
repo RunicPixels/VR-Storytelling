@@ -18,7 +18,7 @@ namespace Cheezegami.VR
 		private Vector3 oldPosition;
 		private Quaternion oldRotation;
 
-
+        Interactable interactable;
 
         private float attachTime;
 
@@ -30,6 +30,7 @@ namespace Cheezegami.VR
         //-------------------------------------------------
         void Awake()
 		{
+            interactable = GetComponent<Interactable>();
 			textMesh = GetComponentInChildren<TextMesh>();
             if (lightSource.enabled) {
                 textMesh.text = "Light is On";
@@ -67,10 +68,12 @@ namespace Cheezegami.VR
 			{
                 if(lightSource.enabled) {
                     lightSource.enabled = false;
+                    interactable.source.PlayOneShot(interactable.attachSound);
                     textMesh.text = "Light is Off";
                 }
                 else {
                     lightSource.enabled = true;
+                    interactable.source.PlayOneShot(interactable.detachSound);
                     textMesh.text = "Light is On";
                 }
 				//if ( hand.currentAttachedObject != gameObject )
