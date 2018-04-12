@@ -21,6 +21,7 @@ namespace Cheezegami.VR
         public GameObject messyBed;
         public bool bedMadeUp = false;
 
+        Interactable interactable;
 
 
         private float attachTime;
@@ -31,6 +32,7 @@ namespace Cheezegami.VR
         //-------------------------------------------------
         void Awake()
 		{
+            interactable = GetComponent<Interactable>();
             niceBed.SetActive(false);
             messyBed.SetActive(true);
         }
@@ -62,6 +64,7 @@ namespace Cheezegami.VR
 			if ( hand.GetStandardInteractionButtonDown() || ( ( hand.controller != null ) && hand.controller.GetPressDown( Valve.VR.EVRButtonId.k_EButton_Grip ) ) )
 			{
                 if(bedMadeUp == false) {
+                    interactable.source.PlayOneShot(interactable.attachSound);
                     niceBed.SetActive(true);
                     messyBed.SetActive(false);
                     bedMadeUp = true;
