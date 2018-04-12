@@ -1,18 +1,17 @@
 fileFormatVersion: 2
-guid: c4cbc48adbe84444bb20f7d72c7ca310
+guid: 76c96d414d700403288a605ab9ef5ea9
+timeCreated: 1523531649
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert21
-    2100002: lambert1
-    2100004: lambert22
-    2100006: lambert18
-    2100008: lambert23
+    2100000: lambert9
+    2100002: lambert5
     2300000: //RootNode
     3300000: //RootNode
-    4300000: vissenvoer
+    4300000: bed
     9500000: //RootNode
   externalObjects: {}
   materials:
