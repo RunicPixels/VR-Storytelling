@@ -15,17 +15,30 @@ namespace Valve.VR.InteractionSystem
 	{
 		public delegate void OnAttachedToHandDelegate( Hand hand );
 		public delegate void OnDetachedFromHandDelegate( Hand hand );
+        private AudioSource source;
+        public AudioClip attachSound;
+        public AudioClip detachSound;
 
 		[HideInInspector]
 		public event OnAttachedToHandDelegate onAttachedToHand;
 		[HideInInspector]
 		public event OnDetachedFromHandDelegate onDetachedFromHand;
 
-		//-------------------------------------------------
-		private void OnAttachedToHand( Hand hand )
+        private void Awake() {
+            if (GetComponent<AudioSource>() != null) {
+                source = GetComponent<AudioSource>();
+            }
+            else {
+                source = gameObject.AddComponent<AudioSource>();
+            }
+        }
+        //-------------------------------------------------
+        private void OnAttachedToHand( Hand hand )
 		{
-			if ( onAttachedToHand != null )
+            source.PlayOneShot(attachSound);
+            if ( onAttachedToHand != null )
 			{
+                
 				onAttachedToHand.Invoke( hand );
 			}
 		}
@@ -34,8 +47,10 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private void OnDetachedFromHand( Hand hand )
 		{
-			if ( onDetachedFromHand != null )
+            source.PlayOneShot(detachSound);
+            if ( onDetachedFromHand != null )
 			{
+                
 				onDetachedFromHand.Invoke( hand );
 			}
 		}
