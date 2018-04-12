@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4085912490969906}
   - component: {fileID: 54505782068621240}
-  - component: {fileID: 82085194564843144}
   - component: {fileID: 114525564398161922}
   - component: {fileID: 114679238031393980}
   - component: {fileID: 114239857797862964}
+  - component: {fileID: 82085194564843144}
   m_Layer: 0
   m_Name: timer
   m_TagString: Untagged
@@ -310,3 +310,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
+  detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
