@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FishFeeding : MonoBehaviour {
     private bool isFishFed = false;
+    public string collidableTag = "Vissenvoer";
     private AudioSource src;
 
     public AudioClip succeedSound;
@@ -24,7 +25,7 @@ public class FishFeeding : MonoBehaviour {
 	}
 
     private void OnTriggerEnter(Collider other) {
-        if(other.tag == "Vissenvoer" && !isFishFed) {
+        if(other.tag == collidableTag && !isFishFed) {
             isFishFed = true;
             src.PlayOneShot(succeedSound);
         }

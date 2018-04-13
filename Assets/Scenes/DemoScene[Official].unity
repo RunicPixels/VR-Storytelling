@@ -2039,108 +2039,6 @@ Texture2D:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: fcfffeb6df10e9a41809549501f34d1f, type: 2}
   m_PrefabInternal: {fileID: 1546889822}
---- !u!65 &191104207
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 191104206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0427578, y: 0.04855951, z: 0.084390774}
-  m_Center: {x: -0.005306079, y: 0.0044590505, z: 0.042195387}
---- !u!114 &191104208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 191104206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachmentFlags: 12
-  attachmentPoint: 
-  catchSpeedThreshold: 0
-  restoreOriginalParent: 0
-  attachEaseIn: 0
-  snapAttachEaseInCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  snapAttachEaseInTime: 0.15
-  attachEaseInAttachmentNames: []
-  onPickUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDetachFromHand:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  snapAttachEaseInCompleted: 0
---- !u!114 &191104209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 191104206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 0}
-  attachSound: {fileID: 8300000, guid: d8c840efc04d33543a7ddadab6a82646, type: 3}
-  detachSound: {fileID: 8300000, guid: 43769287d3a2f8b4ca33bc9cb38704ae, type: 3}
---- !u!54 &191104210
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 191104206}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &191104211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 191104206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocityAverageFrames: 5
-  angularVelocityAverageFrames: 11
-  estimateOnAwake: 0
 --- !u!114 &191104212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,6 +2050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285fd266026a5244798dc28f42761a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collidableTag: Spuit
   succeedSound: {fileID: 8300000, guid: 0cac2cbee525248928b97cbb56f344b0, type: 3}
 --- !u!65 &191104213
 BoxCollider:
@@ -9111,6 +9010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285fd266026a5244798dc28f42761a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collidableTag: Vissenvoer
   succeedSound: {fileID: 8300000, guid: 0cac2cbee525248928b97cbb56f344b0, type: 3}
 --- !u!28 &790900112
 Texture2D:
@@ -11575,6 +11475,10 @@ Prefab:
     - target: {fileID: 400000, guid: 3ccb0148c3897463aad27d1b14aadc62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -98.977005
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3ccb0148c3897463aad27d1b14aadc62, type: 3}
+      propertyPath: m_TagString
+      value: Spuit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ccb0148c3897463aad27d1b14aadc62, type: 3}
@@ -19943,6 +19847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285fd266026a5244798dc28f42761a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collidableTag: Vissenvoer
   succeedSound: {fileID: 8300000, guid: 0cac2cbee525248928b97cbb56f344b0, type: 3}
 --- !u!136 &1950187847
 CapsuleCollider:

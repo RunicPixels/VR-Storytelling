@@ -7,6 +7,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - Vissenvoer
+  - Spuit
   layers:
   - Default
   - TransparentFX
